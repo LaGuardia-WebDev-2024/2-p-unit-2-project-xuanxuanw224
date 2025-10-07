@@ -6,21 +6,45 @@ Requirements
 [  ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include Border Radius CSS Property 
-[ no ] Feature 2 - Include a Static Background Image
+[ yes ] Feature 1 - Include Border Radius CSS Property 
+[ yes ] Feature 2 - Include a Static Background Image
 [ no ] Feature 3 - Include An Animated Background Color Change
-[ no ] Feature 4 - Embed YouTube Video 
+[ yes ] Feature 4 - Embed YouTube Video 
 [ no ] Feature 5 - Include Border CSS Property 
 -->
     
 <!DOCTYPE HTML>
 <html>
     <head>
+        
         <meta charset="utf-8">
         <title>Unit 2 Project</title>
         <style>
-            body {
+            
+            #Owle {color: rgb(255, 174, 0);
+            }
+
+            #forest {color: rgb(154, 156, 7);
+
+            }
+
+            .name {
+                color: rgb(255, 190, 49);
+            }
+
+            .text {
+                color: rgba(223, 153, 48, 0.979);
+            }
+
+            p {
+                color: rgb(255, 237, 180);
+                background-color: rgba(126, 88, 31, 0.644);
+                width: 800px;
+            }
+            body { 
                 background-image: url(https://i.pinimg.com/originals/11/66/ab/1166ab5d15484ec7fd17b4b7d894c0c4.gif); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;
+
+                
             }
             h1 {
                 color: rgb(248, 222, 135); font-family:serif;
@@ -30,22 +54,64 @@ Select ONE Additional Feature to Add
             }
             .title {
                 background-color: rgb(94, 70, 34);
+                text-shadow: 5px solid rgb(104, 19, 10);
             }
             img {
                 border:5px solid rgb(94, 70, 34);
+            
             }
-            .text {
-                color: rgb(219, 165, 48);
+            .column {
+  float: left;
+  width: 32%;
+  padding: 5px;
             }
+            .row::after {
+  content: "";
+  clear: both;
+  display: table;}
+
+  
+.spin-text {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f7e1a5;
+    text-shadow: 
+        1px 1px 0px #744a0d, 
+        2px 2px 0px #e97800, 
+        3px 3px 0px #c29d53, 
+        4px 4px 0px #dcd3a8, 
+        5px 5px 0px #909d45;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    animation: spin-3d 4s infinite linear;
+}
+
+@keyframes spin-3d {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
         </style>
+
     </head>
     <body>
         <center>
-        <h1><strong class="title"> Found Feathers</strong></h1>
+              <div class="spin-container">
+    <h1 class="spin-text">Found Feathers</h1>
+</div>
+        <h1><strong class="spin-text"> By Cindy W.</strong></h1>
 
-<h3 class="title">Please give me views and likes</h3>
+<h3 class="title">PLEASE give me views and likes</h3>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_hTDh2peos?si=4Fr5vGDJLopzT8Bz&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>“Found Feathers”, a seemingly lighthearted and innocent film that takes on a dark twist when faced with the realities of deforestation. <strong id="Owle">Owle</strong>, an owl unique from any other lived a peaceful life far from the brutalities of nature. He chooses to eat an omnivorous diet to avoid harming other lives, and collects unique leafs to fancy as head accessories. However when a leaf he treasured went missing, he was determined to get it back. <br> The film is intended to raise awareness for <strong id="forest">deforestation</strong>. It hurts hundreds of thousands of species by destroying their habitats, food chains, and basically every part of their world. Help by learning more, supporting forest conservation, spreading the message, and even going out and planting a tree. A little goes a <em>long</em> way. 
+</p>
 
 <h3 class="title">Meet the cute lil birb</h3>
 
@@ -53,12 +119,24 @@ Select ONE Additional Feature to Add
 
 <h3 class="title">Snapshots</h3>
 
-<img src="https://f2.toyhou.se/file/f2-toyhou-se/images/108322411_ApMYcUgg4rIMFQi.jpg" width="400" </img>
+<div class="row">
+  <div class="column">
+    <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/108322411_ApMYcUgg4rIMFQi.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/108402632_hzTHsXwBCGmcnto.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/108402634_VCmcDUqE4Ggom1F.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+
 
 <h3 class="title">CREDITS</h3>
 <ul>
-    <li class="text">Animation & Editing : Cinde Wu </li>
-    <li class="text">Music : "Pretend for a Night" by Trevor Kowalski <br> "On Edge" by Amber Glow </li>
+    <li class="text">Animation & Editing : <STRONG class="name">Cinde Wu</STRONG> </li>
+    <li class="text">Music : "Pretend for a Night" <strong class="name">by Trevor Kowalski</strong> <br> "On Edge" by <strong class="name">Amber Glow </strong></li>
 </ul>
 
         </center>
